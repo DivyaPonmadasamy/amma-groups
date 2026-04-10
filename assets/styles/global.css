@@ -1,0 +1,487 @@
+/* Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body,
+textarea {
+    /* font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: "Poppins", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+.para25 {
+    margin: 0;
+    padding: 0;
+    /* line-height: 1.5; */
+}
+
+.container {
+    margin: 0 auto;
+    padding: 4.375rem 0;
+}
+
+.preserve-space {
+    white-space: pre-wrap;
+}
+
+span {
+    display: inline;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+main {
+    padding-top: 100px;
+}
+
+img {
+    width: 100%;
+}
+
+.f-width {
+    max-width: 100%;
+}
+
+.max-width {
+    /* max-width: 70vw; */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mar-auto {
+    margin: 0 auto;
+}
+
+.mar-0 {
+    margin: 0;
+}
+
+.pad-0 {
+    padding: 0;
+}
+
+/* horizontal flex & grid */
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+/* flex wrap */
+.flex-wrap {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* vertical flex */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+/* flex partitions */
+.flex2 .col {
+    width: 50%;
+}
+
+.flex3 .col {
+    width: 33.33%;
+}
+
+.flex4 .col {
+    width: 25%;
+}
+
+.flex5 .col {
+    width: 20%;
+}
+
+.flex6 .col {
+    width: 16.67%;
+}
+
+.flex7 .col {
+    width: 14.29%;
+}
+
+/* grid */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.875rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.875rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.875rem;
+}
+
+/* text alignments */
+.tal {
+    text-align: start;
+}
+
+.tac {
+    text-align: center;
+}
+
+.tar {
+    text-align: end;
+}
+
+/* horizontal alignments */
+.jcs {
+    justify-content: flex-start;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jce {
+    justify-content: flex-end;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.jcse {
+    justify-content: space-evenly;
+}
+
+.jcsa {
+    justify-content: space-around;
+}
+
+/* vertical alignments */
+.vs {
+    align-items: flex-start;
+}
+
+.vc {
+    align-items: center;
+}
+
+.ve {
+    align-items: flex-end;
+}
+
+/* self vertical alignments */
+.vcs {
+    align-self: center;
+}
+
+/* text colors */
+.t-black {
+    color: black;
+}
+
+.t-white {
+    color: #FFFFFF;
+}
+
+.t-white-trans {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* text sizes */
+.fs-8 {
+    font-size: 0.5rem;
+}
+
+.fs-10 {
+    font-size: 0.625rem;
+}
+
+.fs-12 {
+    font-size: 0.75rem;
+}
+
+.fs-14 {
+    font-size: 0.875rem;
+}
+
+.fs-15 {
+    font-size: 0.9375rem;
+}
+
+.fs-16 {
+    font-size: 1rem;
+}
+
+.fs-18 {
+    font-size: 1.125rem;
+}
+
+.fs-20 {
+    font-size: 1.25rem;
+}
+
+.fs-22 {
+    font-size: 1.375rem;
+}
+
+.fs-24 {
+    font-size: 1.5rem;
+}
+
+.fs-26 {
+    font-size: 1.625rem;
+}
+
+.fs-28 {
+    font-size: 1.75rem;
+}
+
+.fs-30 {
+    font-size: 1.875rem;
+}
+
+.fs-32 {
+    font-size: 2rem;
+}
+
+/* positions */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.static {
+    position: static;
+}
+
+.sticky {
+    position: sticky;
+}
+
+
+/* others */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.uc {
+    text-transform: uppercase;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.inset {
+    inset: 0; /*top: 0; left: 0;*/
+}
+
+
+
+/* AmmA groups specifics */
+.heading {
+    position: relative;
+    height: 400px;
+    margin-top: 8px;
+    color: #FFF;
+    padding: 130px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.heading::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: -2;
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.max-75 {
+    /* max-width: 75vw; */
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.max-80 {
+    /* max-width: 80vw; */
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.max-85 {
+    /* max-width: 85vw; */
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.max-85-vw {
+    max-width: 85vw;
+    margin: 0 auto;
+}
+
+.t-red {
+    color: #C50707;
+}
+
+.bg-red {
+    background-color: #C50707;
+}
+
+.t-l-red {
+    color: #B65555;
+}
+
+.bg-l-red {
+    background-color: #B65555;
+}
+
+.t-blue {
+    color: #0B1C3A;
+}
+
+.t-l-blue {
+    color: #557391;
+}
+
+.mar-b-25 {
+    margin-bottom: 25px !important;
+}
+
+.mar-b-80 {
+    margin-bottom: 80px !important;
+}
+
+.mar-b-100 {
+    margin-bottom: 100px !important;
+}
+
+.mar-b-150 {
+    margin-bottom: 150px !important;
+}
+
+.mar-b-200 {
+    margin-bottom: 200px !important;
+}
+
+.pad-b-10 {
+    padding-bottom: 10px !important;
+}
+
+.pad-b-15 {
+    padding-bottom: 15px !important;
+}
+
+.pad-b-20 {
+    padding-bottom: 20px !important;
+}
+
+.pad-b-25 {
+    padding-bottom: 25px !important;
+}
+
+.pad-b-35 {
+    padding-bottom: 2.1875rem !important;
+}
+
+.pad-b-50 {
+    padding-bottom: 3.125rem !important;
+}
+
+.pad-b-70 {
+    padding-bottom: 4.375rem !important;
+}
+
+.pad-b-80 {
+    padding-bottom: 80px !important;
+}
+
+.pad-b-100 {
+    padding-bottom: 6.25rem !important;
+}
+
+.pad-b-150 {
+    padding-bottom: 9.375rem !important;
+}
+
+.pad-b-200 {
+    padding-bottom: 12.5rem !important;
+}
+
+
+/* *************mobile queries*************** */
+
+@media (max-width: 480px) {
+    .heading {
+        height: 250px;
+    }
+}

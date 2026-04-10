@@ -1,0 +1,203 @@
+.grid-2 {
+    gap: 0;
+}
+
+.heading h1 {
+    font-size: 4rem;
+}
+
+.section-first {
+    padding-top: 200px;
+    padding-bottom: 190px;
+}
+
+.section-first p {
+    padding-left: 50px;
+}
+
+.section-first,
+.section-last {
+    line-height: 2;
+}
+
+.section-left-img .left,
+.section-right-img .right {
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.section-left-img .right,
+.section-right-img .left {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: 80px;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.section-4 .right {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    line-height: 2;
+    padding-right: 30px;
+}
+
+.section-4 .fir-sec img,
+.section-4 .snd-sec img,
+.section-4 .thd-sec img,
+.section-4 .for-sec img {
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+    /* height: 30vh; */
+    aspect-ratio: 1/1;
+    margin: 60px 30px;
+    box-shadow: 0 0 15px #0005;
+    transition: all 0.3s ease;
+}
+
+.section-4 .fir-sec img:hover,
+.section-4 .snd-sec img:hover,
+.section-4 .thd-sec img:hover,
+.section-4 .for-sec img:hover {
+    opacity: 0.7;
+    /* box-shadow: 0 0 15px #0005; */
+}
+
+.section-magazine {
+    padding-top: 150px;
+    gap: 50px;
+}
+
+.section-magazine p {
+    line-height: 1.7;
+}
+
+/* Full Parallax window */
+.parallax {
+    position: relative;
+    /* height: 50vh; */
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-last {
+    padding-top: 120px;
+}
+
+.section-last p {
+    padding-right: 50px;
+}
+
+
+/* *************mobile queries*************** */
+
+@media (max-width: 480px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .pad-b-80 {
+        padding-bottom: 0 !important;
+    }
+
+    .pad-b-150,
+    .pad-b-200 {
+        padding-bottom: 5rem !important;
+    }
+
+    .section-first,
+    .section-magazine,
+    .section-left-img .right,
+    .section-right-img .left,
+    .section-last {
+        padding: 5rem 1rem;
+    }
+
+    .section-first .left,
+    .section-last .right {
+        display: none;
+    }
+
+    .section-first p {
+        padding-left: 0;
+    }
+
+    .parallax {
+        background-attachment: scroll;
+    }
+
+    .parallax.mar-b-80 {
+        margin-bottom: 0 !important;
+    }
+
+    .section-magazine .left {
+        text-align: center;
+    }
+
+    .section-left-img .right,
+    .section-right-img .left {
+        text-align: left;
+    }
+
+    .section-4 {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .section-4 .flex {
+        display: block;
+    }
+
+    .section-4 .right {
+        padding: 1rem;
+    }
+
+    .section-4 .fir-sec img,
+    .section-4 .snd-sec img,
+    .section-4 .thd-sec img,
+    .section-4 .for-sec img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+
+
+
+
+    /* Parallax window */
+    /* .image-window {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.image-window::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/home/construction-materials.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.content-section {
+  background: #fff;
+  padding: 100px;
+  font-size: 1.2rem;
+} */

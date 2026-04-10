@@ -1,0 +1,376 @@
+.max-45rem {
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+.max-70rem {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+h1 {
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    width: 100px;
+    height: 5px;
+    background-color: #C50707;
+}
+
+main {
+    padding-top: 0;
+}
+
+.section-1 {
+    position: relative;
+    background: url("../images/backgrounds/saad-salim-PqRvLsjD_TU-unsplash.jpg") center/cover no-repeat;
+    padding-top: 150px;
+    z-index: 0;
+}
+
+.section-1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+}
+
+.section-1 .max-width>p {
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.7;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.grid-2 {
+    gap: 3.125rem;
+}
+
+.section-1 .category {
+    width: 200px;
+    height: 150px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.section-1 .category i {
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+.section-1 .category:hover {
+    border-radius: 10px;
+    background-color: #C50707;
+    color: #FFF;
+    /* box-shadow: 0px 4px 20px -8px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0 0 15px #0005;
+}
+
+.section-1 .category:hover i {
+    color: #FFF;
+}
+
+.img-partition {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+    align-items: center;
+    line-height: 2;
+    padding-top: 4.375rem;
+    /* background-image: url("../images/backgrounds/saad-salim-PqRvLsjD_TU-unsplash.jpg");
+    position: relative; */
+}
+
+/* .img-partition::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.9);
+} */
+
+.img-partition .left {
+    padding-top: 50px;
+}
+
+.img-partition p {
+    padding-bottom: 20px;
+}
+
+.img-partition i {
+    font-size: 5rem;
+}
+
+.img-partition .f-img {
+    border-radius: 20px 0 0 20px;
+    width: 250px;
+    /* width: 16vw; */
+    top: -120px;
+    /* top: -6vw; */
+    left: 50px;
+    /* left: 3.25vw; */
+}
+
+.img-partition .s-img {
+    border-radius: 20px 20px 0 0;
+    width: 400px;
+    /* width: 26vw; */
+    top: -195px;
+    /* top: -11vw; */
+    left: 330px;
+    /* left: 21.30vw; */
+}
+
+.img-partition .t-img {
+    border-radius: 0 0 20px 20px;
+    width: 300px;
+    /* width: 19.5vw; */
+    top: 55px;
+    /* top: 5.25vw; */
+    left: 330px;
+    /* left: 21.30vw; */
+}
+
+.parallax {
+    position: relative;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax.bg {
+    background-image: url("../images/home/construction-materials.jpg");
+}
+
+/* Overlay */
+.parallax::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.section-2 {
+    position: relative;
+    background: url("../images/backgrounds/frames-for-your-heart-VoI2jd75M6Q-unsplash.jpg") center/cover no-repeat;
+    padding-bottom: 0;
+    z-index: 0;
+}
+
+.section-2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+}
+
+.section-2 h2 {
+    font-size: 2rem;
+}
+
+.section-2 h3 {
+    font-size: 1.3rem;
+}
+
+.section-2 .content {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 35px;
+    line-height: 2;
+}
+
+.ideal h3 {
+    font-size: 2rem;
+    padding: 60px;
+    font-weight: 600;
+}
+
+.ideal-sec i {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+}
+
+.ideal-sec p {
+    font-size: 1.2rem;
+}
+
+.ideal-sec {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    color: #FFF;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.ideal-sec.fir::before {
+    background-image: url("../images/home/ideal/aggressive-environment.jpg");
+}
+
+.ideal-sec.sec::before {
+    background-image: url("../images/home/ideal/marine-structures.jpg");
+}
+
+.ideal-sec.thr::before {
+    background-image: url("../images/home/ideal/island-developments.jpg");
+}
+
+.ideal-sec.for::before {
+    background-image: url("../images/home/ideal/coastal-buildings.jpg");
+}
+
+.ideal-sec::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 1s ease-out;
+    z-index: -2;
+}
+
+.ideal-sec::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.ideal-sec:hover::before {
+    transform: scale(1.1);
+}
+
+.clients a {
+    transition: all 0.3s ease;
+}
+
+.clients h2 {
+    font-size: 2rem;
+}
+
+.clients img {
+    width: 100px;
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    box-shadow: 0 0 8px #0005;
+    border-radius: 10px;
+}
+
+.clients a:hover {
+    transform: translateY(-10px);
+}
+
+.marquee-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.marquee {
+    overflow: hidden;
+    padding: 15px 0;
+}
+
+.marquee-track {
+    display: flex;
+    gap: 3.125rem;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.arrow {
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+/* *************mobile queries*************** */
+
+@media (max-width: 480px) {
+    .grid-4,
+    .section-1 .grid-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .img-partition.pad-b-150 {
+        padding-bottom: 0 !important;
+    }
+
+    .section-1 .category {
+        /* visibility: visible !important; */
+        width: 150px;
+    }
+
+    /* target the 3rd item in grid-3 */
+    .grid-3 .category:nth-child(3) {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .img-partition .left {
+        padding: 1rem;
+        grid-column: 1 / -1;
+    }
+
+    .img-partition .right {
+        display: none;
+    }
+
+    .section-2 .left,
+    .section-2 .right {
+        grid-column: 1 / -1;
+    }
+
+    .section-2 .left {
+        margin: 1rem 2rem;
+    }
+
+    .section-2 .right {
+        margin: 0 1rem;
+    }
+
+    .parallax {
+        background-attachment: scroll;
+    }
+
+    .section-2 .pad-b-80,
+    .section-2 .pad-b-100 {
+        padding-bottom: 2rem !important;
+    }
+
+    .section-2 .pad-b-150 {
+        padding-bottom: 4rem !important;
+    }
+
+    .ideal .grid-4 {
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+
+    .clients .max-width {
+        max-width: 8rem;
+    }
+}

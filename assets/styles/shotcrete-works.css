@@ -1,0 +1,79 @@
+.heading::before {
+    background-image: url("../../assets/images/shotcrete-works/Centene-Tower-MO_.jpg");
+    background-repeat: no-repeat;
+}
+
+.section-first .f-img {
+    border-radius: 50px 0 0 0;
+    width: 280px;
+    height: 200px;
+    top: 90px;
+    left: -20px;
+}
+
+.section-first .s-img {
+    border-radius: 0 50px 0 0;
+    width: 230px;
+    top: -120px;
+    left: 280px;
+}
+
+.section-first .t-img {
+    border-radius: 0 0 50px 0;
+    width: 350px;
+    height: 200px;
+    top: 210px;
+    left: 280px;
+}
+
+.section-left-img .left {
+    background-image: url("../../assets/images/shotcrete-works/superior-gunite-shotcrete.jpg");
+}
+
+.section-right-img .right {
+    background-image: url("../../assets/images/shotcrete-works/ca-shotcrete-2_16-9.webp");
+}
+
+.parallax.bg {
+    background-image: url("../../assets/images/shotcrete-works/parallax.jpg");
+}
+
+.section-last .f-img {
+    border-radius: 20px;
+    width: 350px;
+    top: 50px;
+    left: -20px;
+}
+
+.section-last .s-img {
+    border-radius: 20px;
+    width: 210px;
+    height: 300px;
+    top: -120px;
+    left: 350px;
+}
+
+.section-last .t-img {
+    border-radius: 20px;
+    width: 330px;
+    top: 200px;
+    left: 350px;
+}
+
+
+/* *************mobile queries*************** */
+
+@media (max-width: 480px) {
+    main {
+        padding-top: 108px;
+    }
+
+    .heading {
+        margin-top: 0;
+        padding: 2rem 1rem;
+    }
+
+    .heading h1 {
+        font-size: 2.7rem;
+    }
+}

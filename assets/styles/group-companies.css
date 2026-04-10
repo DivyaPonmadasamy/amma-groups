@@ -1,0 +1,160 @@
+.group-companies {
+    background-image: linear-gradient(0deg, #00000000 0%, #C5070714 100%);
+}
+
+.group-companies h2 {
+    box-sizing: border-box;
+    font-size: 2rem;
+    padding: 60px 0;
+}
+
+.group-companies .grid-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.group-companies .grid-3 {
+    padding-bottom: 80px;
+    /* padding-bottom: 5.21vw; */
+}
+
+.company-card {
+    width: 415px;
+    /* width: 27.05vw; */
+    border-radius: 5px;
+    /* border-radius: 0.3275vw; */
+    transition: transform .5s ease-in-out;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.company-img {
+    position: relative;
+    width: 415px;
+    /* width: 27.05vw; */
+    height: 275px;
+    /* height: 17.9vw; */
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.company-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease-out;
+    z-index: -2;
+}
+
+/* Overlay */
+.company-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.company-img.fir::before {
+    background-image: url(../images/about-us/AmmA-civil-eng.jpg);
+}
+
+.company-img.sec::before {
+    background-image: url(../images/about-us/N59.jpg);
+}
+
+.company-img.thr::before {
+    background-image: url(../images/about-us/ACE.jpg);
+}
+
+.company-img.for::before {
+    background-image: url(../images/about-us/AmmA-trader.jpg);
+}
+
+.company-img.fif::before {
+    background-image: url(../images/about-us/ATD.jpg);
+}
+
+.company-img .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    padding: 0.5px 8px;
+    /* padding: 0.03275vw 0.525vw; */
+    border-radius: 0 0 5px 0;
+    /* border-radius: 0 0 0.3275vw 0; */
+    /* font-size: 1.045vw; */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.company-desc {
+    background: hsla(0, 0%, 100%, .8);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    /* border-radius: 0.655vw; */
+    padding: 25px;
+    /* padding: 1.65vw; */
+    /* font-size: 1.045vw; */
+    font-weight: 600;
+    text-align: center;
+    margin-top: -45px;
+    /* margin-top: -2.93vw; */
+    margin-left: 24px;
+    /* margin-left: 1.565vw; */
+    transition: transform .5s ease-in-out;
+    margin-right: 24px;
+    /* margin-right: 1.565vw; */
+    box-sizing: border-box;
+}
+
+.company-img:hover::before {
+    transform: scale(1.1);
+}
+
+
+/* *************mobile queries*************** */
+
+@media (max-width: 480px) {
+    .group-companies {
+        padding-top: 2rem;
+    }
+
+    .group-companies .pad-b-100 {
+        padding-bottom: 3rem !important;
+    }
+
+    .group-companies .max-85 {
+        max-width: 380px;
+        text-align: center;
+    }
+
+    .group-companies .grid-2,
+    .group-companies .grid-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+        gap: 1.875rem;
+        padding-bottom: 1.875rem;
+    }
+
+    .company-card {
+        width: 380px;
+        justify-self: center;
+    }
+
+    .company-img {
+        width: 380px;
+    }
+    
+    /* .company-desc {
+        visibility: visible !important;
+        animation-name: zoomIn !important;
+    } */
+}

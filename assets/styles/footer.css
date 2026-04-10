@@ -1,0 +1,71 @@
+footer .grid-4 {
+    grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
+}
+
+footer {
+    background-color: #000;
+    padding: 100px 0;
+    color: #FFF;
+}
+
+footer .logo {
+    width: 250px;
+}
+
+footer a,
+footer .tag,
+footer .email {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer h4 {
+    font-size: 1.05rem;
+}
+
+footer .icons {
+    font-size: 20px;
+}
+
+footer .phone {
+    font-size: 1.15rem !important;
+    font-weight: 500;
+}
+
+footer i,
+footer a:hover,
+footer .email:hover {
+    color: #FFF;
+}
+
+footer .icons i:hover {
+    transform: scale(1.2);
+}
+
+.flex {
+    gap: 20px;
+}
+
+.flex-col {
+    gap: 15px;
+}
+
+/* *************mobile queries*************** */
+
+@media (max-width: 480px) {
+    footer .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    footer .grid-4 > div {
+        text-align: center;
+    }
+
+    footer .icons,
+    footer ul {
+        width: 300px;
+        margin: 0 auto;
+        justify-content: center;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    }
+}

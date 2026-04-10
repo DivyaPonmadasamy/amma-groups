@@ -1,0 +1,76 @@
+.heading::before {
+    background-image: url("../../assets/images/structural-rehabilitation/services-6.jpg");
+    background-repeat: no-repeat;
+}
+
+.section-first .f-img {
+    border-radius: 50px 0 0 0;
+    width: 350px;
+    top: 50px;
+    left: -50px;
+}
+
+.section-first .s-img {
+    border-radius: 0 50px 0 0;
+    width: 250px;
+    top: -140px;
+    left: 325px;
+}
+
+.section-first .t-img {
+    border-radius: 0 0 50px 0;
+    width: 330px;
+    top: 215px;
+    left: 325px;
+}
+
+.section-left-img .left {
+    background-image: url("../../assets/images/structural-rehabilitation/materials.jpg");
+}
+
+.section-right-img .right {
+    background-image: url("../../assets/images/structural-rehabilitation/construction-pilegrillage.webp");
+}
+
+.parallax.bg {
+    background-image: url("../../assets/images/structural-rehabilitation/parallax.jpg");
+}
+
+.section-last .f-img {
+    border-radius: 20px;
+    width: 320px;
+    top: 150px;
+    left: 0px;
+}
+
+.section-last .s-img {
+    border-radius: 20px;
+    width: 250px;
+    top: -120px;
+    left: 340px;
+}
+
+.section-last .t-img {
+    border-radius: 20px;
+    width: 360px;
+    top: 270px;
+    left: 340px;
+}
+
+
+/* *************mobile queries*************** */
+
+@media (max-width: 480px) {
+    main {
+        padding-top: 108px;
+    }
+
+    .heading {
+        margin-top: 0;
+        padding: 2rem 1rem;
+    }
+
+    .heading h1 {
+        font-size: 3rem;
+    }
+}
