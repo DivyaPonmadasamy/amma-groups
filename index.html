@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmmA Groups</title>
+    <!-- Tab image -->
+    <link rel="icon" href="./assets/images/logo/logo_maroon.jpg">
+    <!-- CSS files -->
+    <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/header.css">
+    <link rel="stylesheet" href="./assets/styles/home.css">
+    <link rel="stylesheet" href="./assets/styles/panout.css">
+    <link rel="stylesheet" href="./assets/styles/group-companies.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Bootstrap Icons -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"> -->
+    <!-- Wow js -->
+    <link rel="stylesheet" href="./assets/styles/animate.css">
+</head>
+
+<body>
+    <header>
+        <!-- icon header -->
+        <div class="icons-block">
+            <div class="icons-header mar-auto flex jcsb">
+                <div class="icons">
+                    <ul class="flex">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul>
+                        <li><i class="fa-solid fa-phone-volume fs-14"></i>+(123) 1234-567-8901</li>
+                        <li><i class="fa-solid fa-envelope fs-16"></i>admin@ammagroups.com</li>
+                        <li><i class="fa-solid fa-clock fs-16"></i>Monday – Friday 10 AM – 8 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- header -->
+        <div class="header">
+            <div class="top-menu mar-auto">
+                <img src="./assets/images/logo/header.jpg" alt="AmmA Groups Logo" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="/" id="home" onclick="funcUnderline('home')" class="selected">Home</a></li>
+                        <li><a href="./about-us/" id="about" onclick="funcUnderline('about')">About Us</a></li>
+                        <li class="services-menu">
+                            <div class="accordion-menu">
+                                <!-- <div class="menu-item"> -->
+                                <a href="#" id="services" onclick="funcUnderline('services')" class="menu-header">Services<i
+                                        id="rotate" class="fa-solid fa-angle-down"></i></a>
+                                <div class="menu-content">
+                                    <nav class="services-dropdown">
+                                        <ul>
+                                            <li><a href="./services/water-proofing/" id="water"
+                                                    onclick="funcUnderline('water')">Waterproofing Solutions</a>
+                                            </li>
+                                            <!-- <li><a href="./services/pressure-grouting/">Pressure Grouting Services</a>
+                                    </li> -->
+                                            <li><a href="./services/structural-rehabilitation/" id="rehab"
+                                                    onclick="funcUnderline('rehab')">Structural Rehabilitation &
+                                                    Repair</a></li>
+                                            <li><a href="./services/soil-stabilization/" id="soil"
+                                                    onclick="funcUnderline('soil')">Soil Stabilization Solutions</a>
+                                            </li>
+                                            <li><a href="./services/shotcrete-works/" id="shotcrete"
+                                                    onclick="funcUnderline('shotcrete')">Shotcrete Works</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- </div> -->
+                            </div>
+                        </li>
+                        <li><a href="./contact-us/" id="contact" onclick="funcUnderline('contact')">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="panning-header">
+            <div class="viewport">
+                <div class="image-container">
+                    <img src="./assets/images/home/andy-gill-wevNvTRjrMk-unsplash.jpg" alt="Image 1"
+                        class="panning-image active">
+                    <img src="./assets/images/home/huseyin-benli-t2_SpZ5YAfM-unsplash.jpg" alt="Image 2"
+                        class="panning-image">
+                    <img src="./assets/images/home/jao-kop-zmMrFYrZdQ8-unsplash.jpg" alt="Image 3"
+                        class="panning-image">
+                </div>
+            </div>
+
+            <div class="content-container">
+                <div class="image-content active wow animate__animated animate__fadeInUp">
+                    <div class="mar-b-25">
+                        From Leaks to Load-Bearing, We Engineer Confidence.
+                    </div>
+                    <button class="btn" onclick="redirectToContact()">Contact Us</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container section-1">
+            <div class="max-width">
+                <h1 class="tac">Specialized Engineering Solutions</h1>
+
+                <p>
+                    AmmA Groups has developed strong expertise in providing <span class="t-l-red">advanced engineering
+                        solutions for underground and deep structure construction,</span> including
+                </p>
+
+                <div class="grid-4 max-70rem pad-b-25">
+                    <!-- <i class="bi bi-caret-right-fill bullet col-l-red"></i>  -->
+                    <div class="category wow animate__animated animate__fadeInLeft">
+                        <i class="fa-solid fa-cloud-showers-water t-red"></i>
+                        <p>Basement waterproofing and leakage control</p>
+                    </div>
+                    <div class="category wow animate__animated animate__fadeInUp">
+                        <i class="fa-solid fa-syringe t-red"></i>
+                        <p>Deep structure grouting and injection systems</p>
+                    </div>
+                    <div class="category wow animate__animated animate__fadeInUp">
+                        <i class="fa-solid fa-shield-virus t-red"></i>
+                        <p>Diaphragm wall (D-wall) leak treatment</p>
+                    </div>
+                    <div class="category wow animate__animated animate__fadeInRight">
+                        <i class="fa-solid fa-anchor t-red"></i>
+                        <p>Anchor grouting and anchor point seepage control</p>
+                    </div>
+                </div>
+
+                <div class="grid-3 max-45rem">
+                    <div class="category wow animate__animated animate__fadeInLeft">
+                        <i class="fa-solid fa-mound t-red"></i>
+                        <p>Soil stabilization using pressure grouting</p>
+                    </div>
+                    <div class="category wow animate__animated animate__fadeInDown">
+                        <i class="fa-solid fa-landmark-dome t-red"></i>
+                        <p>Structural rehabilitation and strengthening</p>
+                    </div>
+                    <div class="category wow animate__animated animate__fadeInRight">
+                        <i class="fa-solid fa-bridge-water t-red"></i>
+                        <p>Shotcrete works for underground structures</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-partition max-85 pad-b-150">
+                <div class="left">
+                    <i class="fa-solid fa-quote-left t-red"></i>
+                    <p>
+                        As part of our integrated capabilities, we are leading manufacturers and suppliers of premium
+                        mineral-based construction chemicals.
+                    </p>
+                    <p>
+                        Our products offer precise pH control, high effectiveness, and extended shelf life, ensuring
+                        reliable performance for demanding and long-term applications.
+                    </p>
+                    <p>
+                        Our team combines <span class="t-red">practical site experience, advanced technologies, and
+                            innovative materials</span> to deliver <span class="t-red">long-lasting and technically
+                            reliable solutions.</span>
+                    </p>
+                </div>
+
+                <div class="relative right">
+                    <img src="./assets/images/home/pressure-grouting.webp" alt="Pressure grouting"
+                        class="f-img absolute wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+                    <img src="./assets/images/home/wolfgang-weiser-8bbWPtPiUPQ-unsplash.jpg" alt="Construction"
+                        class="s-img absolute wow animate__animated animate__fadeInDown">
+                    <img src="./assets/images/home/Crystalline-Waterproofing.jpg" alt="Crystalline Waterproofing"
+                        class="t-img absolute wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax bg"></div>
+
+        <div class="container section-2">
+            <div class="max-85 pad-b-150">
+                <div class="title tac pad-b-100">
+                    <h1 class="pad-b-25">Innovation in Construction Materials</h1>
+                    <h3 class="uc t-red">N59 CORROS GUARD</h3>
+                </div>
+
+                <div class="content pad-b-80">
+                    <div class="left vcs">
+                        <img src="./assets/images/home/n59-corros-guard.jpg" alt="N59 Corros Guard">
+                    </div>
+
+                    <div class="right vcs">
+                        <h2 class="t-l-blue pad-b-25">What is N59</h2>
+                        <p class="pad-b-25">
+                            N59 CORROS GUARD is a proprietary reinforcement protection system developed by <span
+                                class="t-red">AmmA Groups</span> to safeguard concrete structures in harsh marine
+                            environments such as the Maldives, Indonesia.
+                        </p>
+                        <p class="pad-b-25">
+                            Engineered to resist <span class="t-red">high salinity, humidity, and coastal
+                                exposure,</span>
+                            it protects reinforcing steel from corrosion, significantly improving structural durability.
+                        </p>
+                        <p>
+                            <span class="t-red">Backed by research certification from the Indian Corrosion
+                                Department,</span> N59 CORROS GUARD enhances the service life of structures while
+                            minimizing
+                            long-term maintenance costs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ideal">
+                    <h3 class="t-red tac">Ideal for</h3>
+
+                    <div class="grid-4 tac">
+                        <div class="ideal-sec fir flex-col jcc vac">
+                            <i class="fa-solid fa-building-shield t-white"></i>
+                            <p>Infrastructure exposed to aggressive environmental conditions.</p>
+                        </div>
+                        <div class="ideal-sec sec flex-col jcc vac">
+                            <i class="fa-solid fa-bridge-water t-white"></i>
+                            <p>Marine structures</p>
+                        </div>
+                        <div class="ideal-sec thr flex-col jcc vac">
+                            <i class="fa-solid fa-earth-oceania t-white"></i>
+                            <p>Island developments</p>
+                        </div>
+                        <div class="ideal-sec for flex-col jcc vac">
+                            <i class="fa-solid fa-dungeon t-white"></i>
+                            <p>Coastal buildings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container group-companies f-width pad-0 pad-b-200">
+            <div class="max-85">
+                <h2 class="t-red">Our Group Companies</h2>
+
+                <p class="pad-b-100">
+                    AmmA Groups operates through multiple specialized divisions that collectively serve a wide range of
+                    engineering and trade sectors.
+                </p>
+            </div>
+
+            <div>
+                <div class="grid-3 max-85-vw">
+                    <div class="company-card">
+                        <div class="company-img fir">
+                            <span class="title bg-red">AmmA Civil Engineers</span>
+                        </div>
+                        <div class="company-desc wow animate__animated animate__zoomIn">
+                            <p class="exp">Civil engineering and structural rehabilitation specialists</p>
+                        </div>
+                    </div>
+
+                    <div class="company-card">
+                        <div class="company-img sec">
+                            <span class="title bg-red">N59</span>
+                        </div>
+                        <div class="company-desc wow animate__animated animate__zoomIn" data-wow-delay="0.1s">
+                            <p class="exp">Research-driven construction materials and corrosion protection systems</p>
+                        </div>
+                    </div>
+
+                    <div class="company-card">
+                        <div class="company-img thr">
+                            <span class="title bg-red">ACE</span>
+                        </div>
+                        <div class="company-desc wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+                            <p class="exp">Engineering execution and construction services</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-2 max-85-vw pad-b-100">
+                    <div class="company-card">
+                        <div class="company-img for">
+                            <span class="title bg-red">AmmA Trader</span>
+                        </div>
+                        <div class="company-desc wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+                            <p class="exp">Trading and supply of construction materials</p>
+                        </div>
+                    </div>
+
+                    <div class="company-card">
+                        <div class="company-img fif">
+                            <span class="title bg-red">ATD</span>
+                        </div>
+                        <div class="company-desc wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+                            <p class="exp">Import–export and international project support</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="tac">
+                    Together, these divisions provide <span class="t-red">integrated engineering, construction, and
+                        supply chain solutions</span> for both domestic and international projects.
+                </p>
+            </div>
+        </div>
+
+        <div class="container clients max-width pad-b-150">
+            <h2 class="tac t-red mar-b-80">Our Esteemed Clients</h2>
+            <div class="marquee-wrapper">
+                <button class="arrow left"><i class="fa-solid fa-angle-left"></i></button>
+                <div class="marquee max-width">
+                    <div class="marquee-track">
+                        <a href="https://appaswamy.com"><img src="./assets/images/client-logos/appaswamy.jpg"
+                                alt="Appaswamy"></a>
+                        <a href="https://www.theresidency.com"><img src="./assets/images/client-logos/the-residency.png"
+                                alt="The Residency"></a>
+                        <a href="https://lifestylehousing.in/podium-poject.html"><img
+                                src="./assets/images/client-logos/lifestyle-housing.png" alt="Lifestyle Housing"></a>
+                        <a href="https://www.grthotels.com"><img src="./assets/images/client-logos/grt-hotels.png"
+                                alt="GRT Hotels"></a>
+                        <a href="https://afcons.com"><img src="./assets/images/client-logos/afcons.png"
+                                alt="AFCONS"></a>
+                        <a href="https://www.jindalpower.com"><img src="./assets/images/client-logos/jindal-power.jpg"
+                                alt="Jindal Power"></a>
+                        <a href="https://www.landwindia.com/l-and-w-construction"><img
+                                src="./assets/images/client-logos/lw_construction.jpg" alt="L and W Construction"></a>
+                        <a href="https://www.ril.com"><img src="./assets/images/client-logos/ril.jpg"
+                                alt="Reliance"></a>
+                        <a href="https://www.shapoorjipallonji.com"><img src="./assets/images/client-logos/sp.png"
+                                alt="Shapoorji Pallonji"></a>
+                        <a href="https://www.amarahomes.in"><img src="./assets/images/client-logos/amara.png"
+                                alt="Amara Homes"></a>
+                        <a href="https://bashyamgroup.com"><img src="./assets/images/client-logos/baashyaam.png"
+                                alt="Baashyaam Group"></a>
+                        <a href="https://aws.amazon.com"><img src="./assets/images/client-logos/aws.webp"
+                                alt="Amazon AWS"></a>
+                        <a href="https://www.bgrcorp.com/index.php"><img
+                                src="./assets/images/client-logos/bgr-energy.gif" alt="BGR Energy"></a>
+                        <a
+                            href="https://www.sembcorp.com/in/news-and-insights/news/2016/thermal-powertech-corporation-india-secures-8-year-power-purchase-agreement-with-telangana-power-distribution-companies/"><img
+                                src="./assets/images/client-logos/sembcorp-marine.webp" alt="Sembcorp"></a>
+                        <a
+                            href="https://www.pothys.com/?srsltid=AfmBOorjz699SQPaOUltES-fOlDaGQ0CzE4UR1oXr82M-SEFHSlpjHV_"><img
+                                src="./assets/images/client-logos/pothys.jpg" alt="Pothys"></a>
+                        <a href="https://teemageprecast.in"><img src="./assets/images/client-logos/teemage.jpg"
+                                alt="Teemage"></a>
+                        <a href="https://www.iith.ac.in"><img src="./assets/images/client-logos/iith-ac.jpg"
+                                alt="IITH"></a>
+                        <a href="https://www.sunsiyam.com"><img src="./assets/images/client-logos/sun-siyam.png"
+                                alt="Sun Siyam"></a>
+                        <a href="https://hotel78maldives.com/h78-guraidhoo/"><img
+                                src="./assets/images/client-logos/hotel78.png" alt="Hotel 78"></a>
+                        <a href="https://www.larsentoubro.com"><img src="./assets/images/client-logos/l&t.jpg"
+                                alt="Larsen & Toubro"></a>
+                        <a href="https://srhmotastargroups.com"><img src="./assets/images/client-logos/srh-groups.png"
+                                alt="SRH Groups"></a>
+                        <a href="https://atmosphere-kanifushi.com/en"><img
+                                src="./assets/images/client-logos/atmosphere-kanifushi.jpg"
+                                alt="Atmosphere Kanifushi"></a>
+                        <a href="https://www.someekengineers.com"><img
+                                src="./assets/images/client-logos/someek-engineers.png" alt="Someek Engineers"></a>
+                        <a href="https://www.urcindia.com"><img src="./assets/images/client-logos/urc-india.png"
+                                alt="URC India"></a>
+                        <a href="https://uconpt.com"><img src="./assets/images/client-logos/uconpt.jpg"
+                                alt="UCONPT"></a>
+                        <a href="https://spdcl.in"><img src="./assets/images/client-logos/spdcl.png"
+                                alt="SPD Contractors"></a>
+
+                        <!-- Second loop -->
+                        <a href="https://appaswamy.com"><img src="./assets/images/client-logos/appaswamy.jpg"
+                                alt="Appaswamy"></a>
+                        <a href="https://www.theresidency.com"><img src="./assets/images/client-logos/the-residency.png"
+                                alt="The Residency"></a>
+                        <a href="https://lifestylehousing.in/podium-poject.html"><img
+                                src="./assets/images/client-logos/lifestyle-housing.png" alt="Lifestyle Housing"></a>
+                        <a href="https://www.grthotels.com"><img src="./assets/images/client-logos/grt-hotels.png"
+                                alt="GRT Hotels"></a>
+                        <a href="https://afcons.com"><img src="./assets/images/client-logos/afcons.png"
+                                alt="AFCONS"></a>
+                        <a href="https://www.jindalpower.com"><img src="./assets/images/client-logos/jindal-power.jpg"
+                                alt="Jindal Power"></a>
+                        <a href="https://www.landwindia.com/l-and-w-construction"><img
+                                src="./assets/images/client-logos/lw_construction.jpg" alt="L and W Construction"></a>
+                        <a href="https://www.ril.com"><img src="./assets/images/client-logos/ril.jpg"
+                                alt="Reliance"></a>
+                        <a href="https://www.shapoorjipallonji.com"><img src="./assets/images/client-logos/sp.png"
+                                alt="Shapoorji Pallonji"></a>
+                        <a href="https://www.amarahomes.in"><img src="./assets/images/client-logos/amara.png"
+                                alt="Amara Homes"></a>
+                        <a href="https://bashyamgroup.com"><img src="./assets/images/client-logos/baashyaam.png"
+                                alt="Baashyaam Group"></a>
+                        <a href="https://aws.amazon.com"><img src="./assets/images/client-logos/aws.webp"
+                                alt="Amazon AWS"></a>
+                        <a href="https://www.bgrcorp.com/index.php"><img
+                                src="./assets/images/client-logos/bgr-energy.gif" alt="BGR Energy"></a>
+                        <a
+                            href="https://www.sembcorp.com/in/news-and-insights/news/2016/thermal-powertech-corporation-india-secures-8-year-power-purchase-agreement-with-telangana-power-distribution-companies/"><img
+                                src="./assets/images/client-logos/sembcorp-marine.webp" alt="Sembcorp"></a>
+                        <a
+                            href="https://www.pothys.com/?srsltid=AfmBOorjz699SQPaOUltES-fOlDaGQ0CzE4UR1oXr82M-SEFHSlpjHV_"><img
+                                src="./assets/images/client-logos/pothys.jpg" alt="Pothys"></a>
+                        <a href="https://teemageprecast.in"><img src="./assets/images/client-logos/teemage.jpg"
+                                alt="Teemage"></a>
+                        <a href="https://www.iith.ac.in"><img src="./assets/images/client-logos/iith-ac.jpg"
+                                alt="IITH"></a>
+                        <a href="https://www.sunsiyam.com"><img src="./assets/images/client-logos/sun-siyam.png"
+                                alt="Sun Siyam"></a>
+                        <a href="https://hotel78maldives.com/h78-guraidhoo/"><img
+                                src="./assets/images/client-logos/hotel78.png" alt="Hotel 78"></a>
+                        <a href="https://www.larsentoubro.com"><img src="./assets/images/client-logos/l&t.jpg"
+                                alt="Larsen & Toubro"></a>
+                        <a href="https://srhmotastargroups.com"><img src="./assets/images/client-logos/srh-groups.png"
+                                alt="SRH Groups"></a>
+                        <a href="https://atmosphere-kanifushi.com/en"><img
+                                src="./assets/images/client-logos/atmosphere-kanifushi.jpg"
+                                alt="Atmosphere Kanifushi"></a>
+                        <a href="https://www.someekengineers.com"><img
+                                src="./assets/images/client-logos/someek-engineers.png" alt="Someek Engineers"></a>
+                        <a href="https://www.urcindia.com"><img src="./assets/images/client-logos/urc-india.png"
+                                alt="URC India"></a>
+                        <a href="https://uconpt.com"><img src="./assets/images/client-logos/uconpt.jpg"
+                                alt="UCONPT"></a>
+                        <a href="https://spdcl.in"><img src="./assets/images/client-logos/spdcl.png"
+                                alt="SPD Contractors"></a>
+                    </div>
+                </div>
+                <button class="arrow right"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="grid-4 max-85">
+            <div>
+                <img src="./assets/images/logo/header.jpg" alt="AmmA Groups Logo" class="logo pad-b-25">
+                <p class="tag pad-b-15">From Leaks to Load-Bearing, We Engineer Confidence.</p>
+                <ul class="icons flex">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="flex-col">
+                <h4 class="uc">QUICK LINKS</h4>
+                <ul class="flex-col">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./about-us/">About us</a></li>
+                    <li><a href="./contact-us/">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="flex-col">
+                <h4 class="uc">SERVICES</h4>
+                <ul class="flex-col">
+                    <li><a href="./services/water-proofing/">Waterproofing Solutions</a></li>
+                    <li><a href="./services/structural-rehabilitation/">Structural Rehabilitation & Repair</a></li>
+                    <li><a href="./services/soil-stabilization/">Soil Stabilization Solutions</a></li>
+                    <li><a href="./services/shotcrete-works/">Shotcrete Works</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="uc pad-b-25">CONTACT</h4>
+                <p class="phone pad-b-10">+(123) 1234-567-8901</p>
+                <p class="email pad-b-20">admin@ammagroups.com</p>
+                <button class="btn" onclick="redirectToContact()">Let's Talk</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/animate.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="./assets/scripts/hamburger-menu.js"></script>
+    <script src="./assets/scripts/panout.js"></script>
+    <script src="./assets/scripts/header-scroll.js"></script>
+    <script src="./assets/scripts/redirect-home.js"></script>
+    <script src="./assets/scripts/marquee.js"></script>
+    <script src="./assets/scripts/remove-wow.js"></script>
+</body>
+
+</html>

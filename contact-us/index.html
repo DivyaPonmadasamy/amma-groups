@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmmA Groups</title>
+    <!-- Tab image -->
+    <link rel="icon" href="../assets/images/logo/logo_maroon.jpg">
+    <!-- CSS files -->
+    <link rel="stylesheet" href="../assets/styles/global.css">
+    <link rel="stylesheet" href="../assets/styles/header.css">
+    <link rel="stylesheet" href="../assets/styles/contact.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Wow js -->
+    <link rel="stylesheet" href="../assets/styles/animate.css">
+</head>
+
+<body>
+    <header>
+        <!-- icon header -->
+        <div class="icons-block scrolled">
+            <div class="icons-header mar-auto flex jcsb">
+                <div class="icons">
+                    <ul class="flex">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul>
+                        <li><i class="fa-solid fa-phone-volume fs-14"></i>+(123) 1234-567-8901</li>
+                        <li><i class="fa-solid fa-envelope fs-16"></i>admin@ammagroups.com</li>
+                        <li><i class="fa-solid fa-clock fs-16"></i>Monday – Friday 10 AM – 8 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- header -->
+        <div class="header scrolled">
+            <div class="top-menu mar-auto">
+                <img src="../assets/images/logo/header.jpg" alt="AmmA Groups Logo" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="/" id="home" onclick="funcUnderline('home')">Home</a></li>
+                        <li><a href="../about-us/" id="about" onclick="funcUnderline('about')">About Us</a></li>
+                        <li class="services-menu">
+                            <div class="accordion-menu">
+                                <div class="menu-item">
+                                    <a href="#" id="services" onclick="funcUnderline('services')"
+                                        class="menu-header">Services<i id="rotate"
+                                            class="fa-solid fa-angle-down"></i></a>
+                                    <!-- <a href="#">Services<i class="fa-solid fa-angle-down"></i></a> -->
+                                    <div class="menu-content">
+                                        <nav class="services-dropdown">
+                                            <ul>
+                                                <li><a href="../services/water-proofing/" id="water"
+                                                        onclick="funcUnderline('water')">Waterproofing Solutions</a>
+                                                </li>
+                                                <!-- <li><a href="../services/pressure-grouting/">Pressure Grouting Services</a></li> -->
+                                                <li><a href="../services/structural-rehabilitation/" id="rehab"
+                                                        onclick="funcUnderline('rehab')">Structural
+                                                        Rehabilitation & Repair</a></li>
+                                                <li><a href="../services/soil-stabilization/" id="soil"
+                                                        onclick="funcUnderline('soil')">Soil Stabilization Solutions</a>
+                                                </li>
+                                                <li><a href="../services/shotcrete-works/" id="shotcrete"
+                                                        onclick="funcUnderline('shotcrete')">Shotcrete Works</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="../contact-us/" class="selected">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="heading f-width">
+            Contact us
+        </h1>
+
+        <div class="container section-1 grid-3 max-80">
+            <div>
+                <i class="fa-solid fa-phone-volume t-red fs-26"></i>
+                <h3 class="phone">+91 000000</h3>
+                <p>Mon-Fri: 9:00 - 19:00</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope t-red fs-26"></i>
+                <h3>admin@ammagroups.com</h3>
+                <p>24/7 customer support general questions</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-location-dot t-red fs-28"></i>
+                <h3>17770 ABC<br>
+                    XXX 38376</h3>
+                <p>Drop on in! Please call prior your visit.</p>
+            </div>
+        </div>
+
+        <div class="container section-2 grid-2 max-80 pad-b-100">
+            <div>
+                <h3 class="pad-b-25">Drop us a line</h3>
+                <form action="" method="post" name="New Form" autocomplete="on">
+                    <div class="flex">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required="required" autocomplete="on">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" required="required" autocomplete="on">
+                        </div>
+                    </div>
+                    <div class="pad-b-25">
+                        <label for="msg">Message</label>
+                        <textarea type="text" id="msg" name="msg" required="required"></textarea>
+                    </div>
+                    <input class="pad-b-25" type="checkbox" id="allow-form" name="allow-form" rows="6"
+                        required="required">
+                    <label for="allow-form">I allow to process my personal data.</label>
+                    <button class="submit-btn bg-red t-white" type="submit">Send message</button>
+                </form>
+            </div>
+
+            <div>
+                <h3 class="pad-b-25">How to find us</h3>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3886.8814850933577!2d80.077697!3d13.043215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAyJzM1LjYiTiA4MMKwMDQnMzkuNyJF!5e0!3m2!1sen!2sin!4v1774886292756!5m2!1sen!2sin"
+                        width="565" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                    <div class="map-card">
+                        <h3 class="t-l-red">AmmA Groups</h3>
+                        <p>Nazarathpet, Chennai, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="grid-4 max-85">
+            <div>
+                <img src="../assets/images/logo/header.jpg" alt="AmmA Groups Logo" class="logo pad-b-25">
+                <p class="tag pad-b-15">From Leaks to Load-Bearing, We Engineer Confidence.</p>
+                <ul class="icons flex">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="flex-col">
+                <h4 class="uc">QUICK LINKS</h4>
+                <ul class="flex-col">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../about-us/">About us</a></li>
+                    <li><a href="../contact-us/">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="flex-col">
+                <h4 class="uc">SERVICES</h4>
+                <ul class="flex-col">
+                    <li><a href="../services/water-proofing/">Waterproofing Solutions</a></li>
+                    <li><a href="../services/structural-rehabilitation/">Structural Rehabilitation & Repair</a></li>
+                    <li><a href="../services/soil-stabilization/">Soil Stabilization Solutions</a></li>
+                    <li><a href="../services/shotcrete-works/">Shotcrete Works</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="uc pad-b-25">CONTACT</h4>
+                <p class="phone pad-b-10">+(123) 1234-567-8901</p>
+                <p class="email pad-b-20">admin@ammagroups.com</p>
+                <button class="btn" onclick="redirectToContact()">Let's Talk</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/scripts/hamburger-menu.js"></script>
+    <script src="../assets/scripts/redirect-fir-depth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "ammagroups",
+  "version": "1.0.0",
+  "description": "A website for AmmA Groups",
+  "keywords": [
+    "amma",
+    "diaphragm wall",
+    "retaining wall",
+    "grouting",
+    "shotcrete"
+  ],
+  "license": "ISC",
+  "author": "Divya Ponmadasamy",
+  "type": "commonjs",
+  "main": "index.js"
+}
