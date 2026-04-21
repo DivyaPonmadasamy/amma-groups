@@ -1,4 +1,4 @@
-if (window.matchMedia("(max-width: 480px)").matches) {
+if (window.matchMedia("(max-width: 768px)").matches) {
     document.querySelectorAll(".wow").forEach(el => {
         el.classList.remove("wow");
     });
