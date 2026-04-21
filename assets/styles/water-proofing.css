@@ -1,39 +1,39 @@
 .heading::before {
-    background-image: url("../../assets/images/water-proofing/5888866c-b833-425a-b2c3-0df2a77dbd9a1628244450.webp");
+    background-image: url("../../assets/images/water-proofing/cover.webp");
     background-repeat: no-repeat;
 }
 
 .section-first .f-img {
     border-radius: 50px 0 0 0;
     width: 280px;
-    top: 50px;
-    left: -30px;
+    top: 40px;
+    left: -20px;
 }
 
 .section-first .s-img {
     border-radius: 0 50px 0 0;
     width: 230px;
-    top: -140px;
+    top: -150px;
     left: 280px;
 }
 
 .section-first .t-img {
     border-radius: 0 0 50px 0;
     width: 330px;
-    top: 190px;
+    top: 175px;
     left: 280px;
 }
 
 .section-left-img .left {
-    background-image: url("../../assets/images/water-proofing/basement-waterproofing.webp");
+    background-image: url("../../assets/images/water-proofing/section-left-img-unsplash.jpg");
 }
 
 .section-right-img .right {
-    background-image: url("../../assets/images/water-proofing/wall-seepage-solutions.webp");
+    background-image: url("../../assets/images/water-proofing/section-right-img.webp");
 }
 
 .parallax.bg {
-    background-image: url("../../assets/images/water-proofing/Waterproofing-the-roofs.webp");
+    background-image: url("../../assets/images/water-proofing/parallax.webp");
 }
 
 .section-last .f-img {
@@ -60,7 +60,7 @@
 
 /* *************mobile queries*************** */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     main {
         padding-top: 108px;
     }

@@ -52,7 +52,6 @@
     border-radius: 10%;
     width: 200px;
     height: 200px;
-    /* height: 30vh; */
     aspect-ratio: 1/1;
     margin: 60px 30px;
     box-shadow: 0 0 15px #0005;
@@ -64,7 +63,6 @@
 .section-4 .thd-sec img:hover,
 .section-4 .for-sec img:hover {
     opacity: 0.7;
-    /* box-shadow: 0 0 15px #0005; */
 }
 
 .section-magazine {
@@ -79,7 +77,6 @@
 /* Full Parallax window */
 .parallax {
     position: relative;
-    /* height: 50vh; */
     height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -98,7 +95,7 @@
 
 /* *************mobile queries*************** */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .grid-2 {
         grid-template-columns: 1fr;
     }
@@ -168,36 +165,3 @@
         height: 300px;
     }
 }
-
-
-
-
-
-
-    /* Parallax window */
-    /* .image-window {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
-
-.image-window::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/home/construction-materials.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  z-index: -1;
-}
-
-.content-section {
-  background: #fff;
-  padding: 100px;
-  font-size: 1.2rem;
-} */

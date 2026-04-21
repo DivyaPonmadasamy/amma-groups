@@ -1,5 +1,5 @@
 .heading::before {
-    background-image: url("../../assets/images/shotcrete-works/Centene-Tower-MO_.jpg");
+    background-image: url("../../assets/images/shotcrete-works/cover.jpg");
     background-repeat: no-repeat;
 }
 
@@ -27,11 +27,11 @@
 }
 
 .section-left-img .left {
-    background-image: url("../../assets/images/shotcrete-works/superior-gunite-shotcrete.jpg");
+    background-image: url("../../assets/images/shotcrete-works/section-left-img.jpg");
 }
 
 .section-right-img .right {
-    background-image: url("../../assets/images/shotcrete-works/ca-shotcrete-2_16-9.webp");
+    background-image: url("../../assets/images/shotcrete-works/section-right-img.webp");
 }
 
 .parallax.bg {
@@ -63,7 +63,7 @@
 
 /* *************mobile queries*************** */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     main {
         padding-top: 108px;
     }

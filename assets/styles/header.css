@@ -21,7 +21,6 @@
     width: 90vw;
     min-height: 38px;
     max-height: 38px;
-    /* z-index: 10; */
 }
 
 header .icons ul,
@@ -59,7 +58,8 @@ header .icons li:hover a {
     margin-right: 5px;
 }
 
-.contacts {
+.contacts,
+.contacts a {
     color: #FFF;
     font-size: 12px;
     font-weight: 500;
@@ -69,8 +69,13 @@ header .icons li:hover a {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.icons-block.scrolled .contacts {
+.icons-block.scrolled .contacts,
+.icons-block.scrolled .contacts a {
     color: #999999;
+}
+
+.contacts a::after {
+    background-color: transparent;
 }
 
 /* ***************************************** */
@@ -101,8 +106,6 @@ header .icons li:hover a {
 }
 
 .header.scrolled {
-    /* position: fixed; */
-    /* top: 38px; */
     background: #FFF;
     box-shadow: 0px 4px 20px -8px rgba(0, 0, 0, 0.15);
 }
@@ -125,15 +128,11 @@ header a,
 .menu-header {
     position: relative;
     text-decoration: none;
-    /* color: rgba(255, 255, 255, 0.04); */
     color: #FFF;
 }
 
 .menu-header {
-    /* background: none;
-    border: none; */
     font-size: 1.05rem;
-    /* padding: 0; */
 }
 
 .header.scrolled a,
@@ -163,7 +162,6 @@ header a:hover::after,
 }
 
 .selected-sub {
-    /* color: #000 !important; */
     color: #C50707 !important;
 }
 
@@ -172,7 +170,6 @@ header a:hover::after,
 }
 
 .header.scrolled .selected-sub {
-    /* color: #000 !important; */
     color: #C50707 !important;
 }
 
@@ -192,12 +189,10 @@ header a:hover::after,
 
 .services-menu i {
     font-size: 0.8rem;
-    /* margin-left: 0.5rem; */
     transition: transform 0.1s ease;
 }
 
 .services-menu:hover i {
-    /* margin-left: 0.5rem; */
     transform: rotate(180deg);
 }
 
@@ -268,7 +263,6 @@ header a:hover::after,
     background-image: linear-gradient(to right, #C50707 50%, #FFF 50%);
     background-size: 200% 100%;
     background-position: right;
-    /* -webkit-background-clip: text; */
     background-clip: text;
     transition: background-position 0.5s ease, border-image 0.5s ease;
 
@@ -290,9 +284,8 @@ header a:hover::after,
 
 /* *************mobile queries*************** */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .icons-block {
-        /* position: fixed; */
         width: 100vw;
     }
 
@@ -312,8 +305,6 @@ header a:hover::after,
 
     .header,
     .header.scrolled {
-        /* position: fixed; */
-        /* top: 38px; */
         background: #FFF;
         box-shadow: 0px 4px 20px -8px rgba(0, 0, 0, 0.15);
     }
@@ -322,15 +313,6 @@ header a:hover::after,
         width: 100vw;
     }
 
-    /* .header { */
-    /* position: sticky; */
-    /* background: transparent;
-    } */
-
-    /* .header.scrolled {
-        position: fixed;
-    } */
-
     .header ul {
         gap: 0;
     }
@@ -338,7 +320,6 @@ header a:hover::after,
     .top-menu,
     .header.scrolled .top-menu {
         position: relative;
-        /* min-height: 40px; */
         min-height: 70px;
         padding: 0;
         justify-content: space-between;
@@ -346,7 +327,6 @@ header a:hover::after,
 
     .logo,
     .header.scrolled .logo {
-        /* width: 170px; */
         width: 260px;
     }
 
@@ -417,10 +397,6 @@ header a:hover::after,
         color: #000;
     }
 
-    /* .services-menu {
-        display: block;
-    } */
-
     .services-menu:hover i {
         transform: none;
     }
@@ -430,15 +406,6 @@ header a:hover::after,
         opacity: 1;
         transform: none;
     }
-
-    /* .menu-item { */
-    /* display: block; */
-    /* width: 100%; */
-    /* } */
-
-    /* .menu-header::after {
-        float: right;
-    } */
 
     .menu-content {
         max-height: 0;
@@ -463,8 +430,6 @@ header a:hover::after,
         position: static;
         padding-top: 1rem;
         margin-bottom: -1rem;
-        /* position: fixed; */
-        /* top: 340px; */
     }
 
     .services-dropdown li {
@@ -473,15 +438,7 @@ header a:hover::after,
 
     .services-dropdown a {
         padding: 5px 0;
-        /* color: #000; */
     }
-
-    /* #rotate { */
-        /* display: inline-block; */
-        /* margin-left: 0.5rem; */
-        /* transform-origin: center; */
-        /* transition: transform 0.1s ease; */
-    /* } */
 
     .clicked {
         color: #C50707 !important;

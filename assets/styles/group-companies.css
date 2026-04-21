@@ -15,14 +15,11 @@
 
 .group-companies .grid-3 {
     padding-bottom: 80px;
-    /* padding-bottom: 5.21vw; */
 }
 
 .company-card {
     width: 415px;
-    /* width: 27.05vw; */
     border-radius: 5px;
-    /* border-radius: 0.3275vw; */
     transition: transform .5s ease-in-out;
     overflow: hidden;
     box-sizing: border-box;
@@ -31,9 +28,7 @@
 .company-img {
     position: relative;
     width: 415px;
-    /* width: 27.05vw; */
     height: 275px;
-    /* height: 17.9vw; */
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
@@ -59,23 +54,23 @@
 }
 
 .company-img.fir::before {
-    background-image: url(../images/about-us/AmmA-civil-eng.jpg);
+    background-image: url(../images/about-us/group-companies/AmmA-civil-eng-unsplash.jpg);
 }
 
 .company-img.sec::before {
-    background-image: url(../images/about-us/N59.jpg);
+    background-image: url(../images/about-us/group-companies/N59-unsplash.jpg);
 }
 
 .company-img.thr::before {
-    background-image: url(../images/about-us/ACE.jpg);
+    background-image: url(../images/about-us/group-companies/ACE-unsplash.jpg);
 }
 
 .company-img.for::before {
-    background-image: url(../images/about-us/AmmA-trader.jpg);
+    background-image: url(../images/about-us/group-companies/AmmA-trader.jpg);
 }
 
 .company-img.fif::before {
-    background-image: url(../images/about-us/ATD.jpg);
+    background-image: url(../images/about-us/group-companies/ATD-unsplash.jpg);
 }
 
 .company-img .title {
@@ -84,10 +79,7 @@
     left: 0;
     font-size: 1.5rem;
     padding: 0.5px 8px;
-    /* padding: 0.03275vw 0.525vw; */
     border-radius: 0 0 5px 0;
-    /* border-radius: 0 0 0.3275vw 0; */
-    /* font-size: 1.045vw; */
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFF;
@@ -97,19 +89,13 @@
     background: hsla(0, 0%, 100%, .8);
     backdrop-filter: blur(20px);
     border-radius: 10px;
-    /* border-radius: 0.655vw; */
     padding: 25px;
-    /* padding: 1.65vw; */
-    /* font-size: 1.045vw; */
     font-weight: 600;
     text-align: center;
     margin-top: -45px;
-    /* margin-top: -2.93vw; */
     margin-left: 24px;
-    /* margin-left: 1.565vw; */
     transition: transform .5s ease-in-out;
     margin-right: 24px;
-    /* margin-right: 1.565vw; */
     box-sizing: border-box;
 }
 
@@ -120,7 +106,7 @@
 
 /* *************mobile queries*************** */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .group-companies {
         padding-top: 2rem;
     }
@@ -152,9 +138,4 @@
     .company-img {
         width: 380px;
     }
-    
-    /* .company-desc {
-        visibility: visible !important;
-        animation-name: zoomIn !important;
-    } */
 }

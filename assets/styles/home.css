@@ -27,7 +27,7 @@ main {
 
 .section-1 {
     position: relative;
-    background: url("../images/backgrounds/saad-salim-PqRvLsjD_TU-unsplash.jpg") center/cover no-repeat;
+    background: url("../images/backgrounds/home/bg1-unsplash.jpg") center/cover no-repeat;
     padding-top: 150px;
     z-index: 0;
 }
@@ -69,7 +69,6 @@ main {
     border-radius: 10px;
     background-color: #C50707;
     color: #FFF;
-    /* box-shadow: 0px 4px 20px -8px rgba(0, 0, 0, 0.15); */
     box-shadow: 0 0 15px #0005;
 }
 
@@ -84,16 +83,7 @@ main {
     align-items: center;
     line-height: 2;
     padding-top: 4.375rem;
-    /* background-image: url("../images/backgrounds/saad-salim-PqRvLsjD_TU-unsplash.jpg");
-    position: relative; */
 }
-
-/* .img-partition::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.9);
-} */
 
 .img-partition .left {
     padding-top: 50px;
@@ -110,31 +100,22 @@ main {
 .img-partition .f-img {
     border-radius: 20px 0 0 20px;
     width: 250px;
-    /* width: 16vw; */
     top: -120px;
-    /* top: -6vw; */
     left: 50px;
-    /* left: 3.25vw; */
 }
 
 .img-partition .s-img {
     border-radius: 20px 20px 0 0;
     width: 400px;
-    /* width: 26vw; */
     top: -195px;
-    /* top: -11vw; */
     left: 330px;
-    /* left: 21.30vw; */
 }
 
 .img-partition .t-img {
     border-radius: 0 0 20px 20px;
     width: 300px;
-    /* width: 19.5vw; */
     top: 55px;
-    /* top: 5.25vw; */
     left: 330px;
-    /* left: 21.30vw; */
 }
 
 .parallax {
@@ -147,7 +128,7 @@ main {
 }
 
 .parallax.bg {
-    background-image: url("../images/home/construction-materials.jpg");
+    background-image: url("../images/home/parallax-unsplash.jpg");
 }
 
 /* Overlay */
@@ -162,7 +143,7 @@ main {
 
 .section-2 {
     position: relative;
-    background: url("../images/backgrounds/frames-for-your-heart-VoI2jd75M6Q-unsplash.jpg") center/cover no-repeat;
+    background: url("../images/backgrounds/home/bg2-unsplash.jpg") center/cover no-repeat;
     padding-bottom: 0;
     z-index: 0;
 }
@@ -218,19 +199,19 @@ main {
 }
 
 .ideal-sec.fir::before {
-    background-image: url("../images/home/ideal/aggressive-environment.jpg");
+    background-image: url("../images/home/ideal/aggressive-environment-unsplash.jpg");
 }
 
 .ideal-sec.sec::before {
-    background-image: url("../images/home/ideal/marine-structures.jpg");
+    background-image: url("../images/home/ideal/marine-structures-unsplash.jpg");
 }
 
 .ideal-sec.thr::before {
-    background-image: url("../images/home/ideal/island-developments.jpg");
+    background-image: url("../images/home/ideal/island-developments-unsplash.jpg");
 }
 
 .ideal-sec.for::before {
-    background-image: url("../images/home/ideal/coastal-buildings.jpg");
+    background-image: url("../images/home/ideal/coastal-buildings-unsplash.jpg");
 }
 
 .ideal-sec::before {
@@ -266,7 +247,6 @@ main {
 
 .clients img {
     width: 100px;
-    /* border: 1px solid rgba(0, 0, 0, 0.3); */
     box-shadow: 0 0 8px #0005;
     border-radius: 10px;
 }
@@ -309,7 +289,7 @@ main {
 
 /* *************mobile queries*************** */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .grid-4,
     .section-1 .grid-3 {
         grid-template-columns: 1fr 1fr;
@@ -320,7 +300,6 @@ main {
     }
 
     .section-1 .category {
-        /* visibility: visible !important; */
         width: 150px;
     }
 

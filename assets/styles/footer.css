@@ -1,5 +1,5 @@
 footer .grid-4 {
-    grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1.1fr;
 }
 
 footer {
@@ -51,7 +51,7 @@ footer .icons i:hover {
 
 /* *************mobile queries*************** */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     footer .grid-4 {
         grid-template-columns: 1fr;
     }

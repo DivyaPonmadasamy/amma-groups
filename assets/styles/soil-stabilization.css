@@ -1,5 +1,5 @@
 .heading::before {
-    background-image: url("../../assets/images/soil-stabilization/46global-road-technology-stabilization-of-soil.jpg");
+    background-image: url("../../assets/images/soil-stabilization/cover.jpg");
     background-repeat: no-repeat;
 }
 
@@ -27,11 +27,11 @@
 }
 
 .section-left-img .left {
-    background-image: url("../../assets/images/soil-stabilization/Soil-Stabilization.jpg");
+    background-image: url("../../assets/images/soil-stabilization/section-left-img.jpg");
 }
 
 .section-right-img .right {
-    background-image: url("../../assets/images/soil-stabilization/ground-improvement.jpg");
+    background-image: url("../../assets/images/soil-stabilization/section-right-img.jpg");
 }
 
 .parallax.bg {
@@ -63,7 +63,7 @@
 
 /* *************mobile queries*************** */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     main {
         padding-top: 108px;
     }

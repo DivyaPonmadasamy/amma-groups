@@ -6,16 +6,6 @@
     /* z-index: -1; */
 }
 
-/* .viewport::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  backdrop-filter: blur(1px);
-  background-color: rgba(0,0,0,0.2);
-  pointer-events: none;
-} */
-
 .image-container {
     position: relative;
     width: 100%;
@@ -70,12 +60,10 @@
 
 /* *************mobile queries*************** */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .image-content {
         top: 12rem;
         left: 1rem;
         width: 400px;
-        /* top: 15rem;
-        font-size: 3rem; */
     }
 }

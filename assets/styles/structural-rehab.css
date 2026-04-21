@@ -1,5 +1,5 @@
 .heading::before {
-    background-image: url("../../assets/images/structural-rehabilitation/services-6.jpg");
+    background-image: url("../../assets/images/structural-rehabilitation/cover.jpg");
     background-repeat: no-repeat;
 }
 
@@ -13,23 +13,23 @@
 .section-first .s-img {
     border-radius: 0 50px 0 0;
     width: 250px;
-    top: -140px;
+    top: -150px;
     left: 325px;
 }
 
 .section-first .t-img {
     border-radius: 0 0 50px 0;
     width: 330px;
-    top: 215px;
+    top: 200px;
     left: 325px;
 }
 
 .section-left-img .left {
-    background-image: url("../../assets/images/structural-rehabilitation/materials.jpg");
+    background-image: url("../../assets/images/structural-rehabilitation/section-left-img.jpg");
 }
 
 .section-right-img .right {
-    background-image: url("../../assets/images/structural-rehabilitation/construction-pilegrillage.webp");
+    background-image: url("../../assets/images/structural-rehabilitation/section-right-img.webp");
 }
 
 .parallax.bg {
@@ -60,7 +60,7 @@
 
 /* *************mobile queries*************** */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     main {
         padding-top: 108px;
     }
