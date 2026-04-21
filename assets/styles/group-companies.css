@@ -8,13 +8,10 @@
     padding: 60px 0;
 }
 
-.group-companies .grid-2 {
-    display: flex;
-    justify-content: center;
-}
-
+.group-companies .grid-2,
 .group-companies .grid-3 {
-    padding-bottom: 80px;
+    justify-self: center;
+    gap: 1.875rem;
 }
 
 .company-card {
@@ -122,20 +119,18 @@
 
     .group-companies .grid-2,
     .group-companies .grid-3 {
-        display: grid;
         grid-template-columns: 1fr;
-        max-width: 400px;
+        max-width: 90vw;
         margin: 0 auto;
-        gap: 1.875rem;
         padding-bottom: 1.875rem;
     }
 
     .company-card {
-        width: 380px;
+        width: 100%;
         justify-self: center;
     }
 
     .company-img {
-        width: 380px;
+        width: 100%;
     }
 }

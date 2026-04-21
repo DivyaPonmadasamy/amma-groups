@@ -114,6 +114,7 @@
     .section-left-img .right,
     .section-right-img .left,
     .section-last {
+        text-align: center;
         padding: 5rem 1rem;
     }
 
@@ -139,13 +140,13 @@
     }
 
     .section-left-img .right,
-    .section-right-img .left {
-        text-align: left;
+    .section-right-img .left,
+    .section-magazine {
+        text-align: justify;
     }
 
     .section-4 {
         max-width: 100%;
-        margin: 0 auto;
         text-align: center;
     }
 
@@ -163,5 +164,9 @@
     .section-4 .for-sec img {
         width: 300px;
         height: 300px;
+    }
+
+    .section-last p {
+        padding-right: 0px;
     }
 }
