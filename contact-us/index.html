@@ -33,8 +33,10 @@
                 </div>
                 <div class="contacts">
                     <ul>
-                        <li><i class="fa-solid fa-phone-volume fs-14"></i>+(123) 1234-567-8901</li>
-                        <li><i class="fa-solid fa-envelope fs-16"></i>admin@ammagroups.com</li>
+                        <li><i class="fa-solid fa-phone-volume fs-14"></i><a
+                                href="tel:+914426274549">+91-44-26274549</a></li>
+                        <li><i class="fa-solid fa-envelope fs-16"></i><a
+                                href="mailto:admin@ammagroups.com">admin@ammagroups.com</a></li>
                         <li><i class="fa-solid fa-clock fs-16"></i>Monday – Friday 10 AM – 8 PM</li>
                     </ul>
                 </div>
@@ -44,7 +46,7 @@
         <!-- header -->
         <div class="header scrolled">
             <div class="top-menu mar-auto">
-                <img src="../assets/images/logo/header.jpg" alt="AmmA Groups Logo" class="logo">
+                <img src="../assets/images/logo/header.png" alt="AmmA Groups Logo" class="logo">
                 <nav>
                     <ul>
                         <li><a href="/" id="home" onclick="funcUnderline('home')">Home</a></li>
@@ -55,14 +57,12 @@
                                     <a href="#" id="services" onclick="funcUnderline('services')"
                                         class="menu-header">Services<i id="rotate"
                                             class="fa-solid fa-angle-down"></i></a>
-                                    <!-- <a href="#">Services<i class="fa-solid fa-angle-down"></i></a> -->
                                     <div class="menu-content">
                                         <nav class="services-dropdown">
                                             <ul>
                                                 <li><a href="../services/water-proofing/" id="water"
                                                         onclick="funcUnderline('water')">Waterproofing Solutions</a>
                                                 </li>
-                                                <!-- <li><a href="../services/pressure-grouting/">Pressure Grouting Services</a></li> -->
                                                 <li><a href="../services/structural-rehabilitation/" id="rehab"
                                                         onclick="funcUnderline('rehab')">Structural
                                                         Rehabilitation & Repair</a></li>
@@ -98,19 +98,28 @@
         <div class="container section-1 grid-3 max-80">
             <div>
                 <i class="fa-solid fa-phone-volume t-red fs-26"></i>
-                <h3 class="phone">+91 000000</h3>
-                <p>Mon-Fri: 9:00 - 19:00</p>
+                <h3 class="phone">
+                    <strong>Landline:</strong>
+                    <a href="tel:+914426274549">+91-44-26274549</a>
+                </h3>
+                <h3 class="phone pad-b-10">
+                    <strong>Mobile:</strong>
+                    <a href="tel:+919940150220">+91-99401 50220</a>
+                </h3>
+                <p>Mon-Fri: 10:00 - 20:00</p>
             </div>
             <div>
                 <i class="fa-solid fa-envelope t-red fs-26"></i>
-                <h3>admin@ammagroups.com</h3>
+                <h3><a href="mailto:admin@ammagroups.com">admin@ammagroups.com</a></h3>
                 <p>24/7 customer support general questions</p>
             </div>
             <div>
-                <i class="fa-solid fa-location-dot t-red fs-28"></i>
-                <h3>17770 ABC<br>
-                    XXX 38376</h3>
-                <p>Drop on in! Please call prior your visit.</p>
+                <i class="fa-solid fa-location-dot t-red fs-28 pad-b-10"></i>
+                <p class="pad-b-10"><strong>Registered Office:</strong></p>
+                <p class="pad-b-20"># 666, Chokkalingam Street, Nazarathpet, Poonamallee Chennai - 600123.</p>
+                <p class="pad-b-10"><strong>Maldives Branch:</strong></p>
+                <p># 2A, M Nector, Asaree hingun, Malé, Maldives.</p>
+                <p>Mobile: +960 7200059</p>
             </div>
         </div>
 
@@ -118,14 +127,22 @@
             <div>
                 <h3 class="pad-b-25">Drop us a line</h3>
                 <form action="" method="post" name="New Form" autocomplete="on">
-                    <div class="flex">
+                    <div class="grid-2">
                         <div>
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required="required" autocomplete="on">
                         </div>
                         <div>
+                            <label for="phone">Mobile No</label>
+                            <input type="tel" id="phone" name="phone" required="required" autocomplete="on">
+                        </div>
+                        <div>
                             <label for="email">Email</label>
-                            <input type="text" id="email" name="email" required="required" autocomplete="on">
+                            <input type="email" id="email" name="email" required="required" autocomplete="on">
+                        </div>
+                        <div>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required="required">
                         </div>
                     </div>
                     <div class="pad-b-25">
@@ -150,7 +167,7 @@
 
                     <div class="map-card">
                         <h3 class="t-l-red">AmmA Groups</h3>
-                        <p>Nazarathpet, Chennai, India</p>
+                        <p>Poonamallee, Chennai, India</p>
                     </div>
                 </div>
             </div>
@@ -160,8 +177,8 @@
     <footer>
         <div class="grid-4 max-85">
             <div>
-                <img src="../assets/images/logo/header.jpg" alt="AmmA Groups Logo" class="logo pad-b-25">
-                <p class="tag pad-b-15">From Leaks to Load-Bearing, We Engineer Confidence.</p>
+                <img src="../assets/images/logo/header.png" alt="AmmA Groups Logo" class="logo pad-b-25">
+                <p class="tag pad-b-15">Engineered Basement & Deep Structure Waterproofing Solutions.</p>
                 <ul class="icons flex">
                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
@@ -191,8 +208,9 @@
 
             <div>
                 <h4 class="uc pad-b-25">CONTACT</h4>
-                <p class="phone pad-b-10">+(123) 1234-567-8901</p>
-                <p class="email pad-b-20">admin@ammagroups.com</p>
+                <p class="phone pad-b-10">Landline: <a href="tel:+914426274549">+91-44-26274549</a></p>
+                <p class="phone pad-b-10">Mobile: <a href="tel:+919940150220">+91-99401 50220</a></p>
+                <p class="email pad-b-20"><a href="mailto:admin@ammagroups.com">admin@ammagroups.com</a></p>
                 <button class="btn" onclick="redirectToContact()">Let's Talk</button>
             </div>
         </div>
