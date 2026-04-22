@@ -10,8 +10,11 @@
 
 .group-companies .grid-2,
 .group-companies .grid-3 {
-    justify-self: center;
-    gap: 1.875rem;
+    justify-self: center;    
+}
+
+.group-companies .grid-2 {
+    gap: 3.125rem;
 }
 
 .company-card {

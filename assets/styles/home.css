@@ -47,10 +47,6 @@ main {
     text-align: center;
 }
 
-.grid-2 {
-    gap: 3.125rem;
-}
-
 .section-1 .category {
     width: 200px;
     height: 150px;
@@ -290,7 +286,7 @@ main {
 /* *************mobile queries*************** */
 
 @media (max-width: 768px) {
-    .grid-4,
+    .section-1 .grid-4,
     .section-1 .grid-3 {
         grid-template-columns: 1fr 1fr;
     }
@@ -304,7 +300,7 @@ main {
     }
 
     /* target the 3rd item in grid-3 */
-    .grid-3 .category:nth-child(3) {
+    .section-1 .grid-3 .category:nth-child(3) {
         grid-column: 1 / -1;
         justify-self: center;
     }
